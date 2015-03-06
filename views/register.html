@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- font awesome from BootstrapCDN -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link href="/public/app.css" rel="stylesheet">
+    </head>
+    <body class="home">
+        <div class="container">
+            <div class="login-page clearfix">
+              <div class="logged-in-box auth0-box logged-in">
+                <h1 id="logo"><img src="/public/auth0_logo_final_blue_RGB.png" /></h1>
+                <h2>Welcome {{user.nickname}}</h2>
+                <p>In order to continue we need some additional information.</p>
+                <form method="POST">
+                  <label for="account_type">Account Type:</label>
+                  <input type="text" id="account_type" name="account_type">
+                  <input type="submit" />
+                </form>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>
